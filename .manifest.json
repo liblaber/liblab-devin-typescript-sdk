@@ -1,0 +1,182 @@
+{
+  "liblabVersion": "2.9.7",
+  "date": "2024-12-11T13:57:02.548Z",
+  "config": {
+    "apiId": 511,
+    "sdkName": "devin",
+    "sdkVersion": "1.0.0",
+    "languages": ["typescript"],
+    "auth": ["bearer"],
+    "docs": [],
+    "liblabVersion": "2",
+    "deliveryMethods": ["zip"],
+    "apiVersion": "1.0.0",
+    "apiName": "devin",
+    "specFilePath": "./api-specs/openapi-3.0/devin.yaml",
+    "languageOptions": {
+      "go": {
+        "goModuleName": "github.com/swagger-api/swagger-petstore",
+        "githubRepoName": "",
+        "ignoreFiles": [],
+        "liblabVersion": "2",
+        "sdkVersion": "1.0.0"
+      },
+      "java": {
+        "groupId": "com.swagger",
+        "artifactId": "petstore",
+        "ignoreFiles": [],
+        "liblabVersion": "2",
+        "sdkVersion": "1.0.0"
+      },
+      "python": {
+        "alwaysInitializeOptionals": false,
+        "pypiPackageName": "",
+        "githubRepoName": "",
+        "ignoreFiles": [],
+        "liblabVersion": "2",
+        "sdkVersion": "1.0.0"
+      },
+      "typescript": {
+        "bundle": true,
+        "exportClassDefault": false,
+        "httpClient": "fetch",
+        "npmName": "",
+        "npmOrg": "",
+        "githubRepoName": "",
+        "ignoreFiles": [],
+        "liblabVersion": "2",
+        "sdkVersion": "1.0.0",
+        "generateEnumAs": "union"
+      }
+    },
+    "publishing": {
+      "githubOrg": ""
+    },
+    "authentication": {
+      "access": {
+        "prefix": "Bearer"
+      }
+    },
+    "devContainer": true,
+    "generateEnv": true,
+    "includeOptionalSnippetParameters": false,
+    "inferServiceNames": false,
+    "injectedModels": [],
+    "license": {
+      "type": "MIT",
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT",
+      "path": "MIT.ejs"
+    },
+    "responseHeaders": false,
+    "retry": {
+      "enabled": true,
+      "maxAttempts": 3,
+      "retryDelay": 150,
+      "maxDelay": 5000,
+      "retryDelayJitter": 50,
+      "backOffFactor": 2,
+      "httpCodesToRetry": [408, 429, 500, 502, 503, 504],
+      "httpMethodsToRetry": ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"]
+    },
+    "multiTenant": true,
+    "includeWatermark": false,
+    "language": "typescript",
+    "deliveryMethod": "zip",
+    "hooks": {
+      "enabled": false,
+      "sourceDir": ""
+    },
+    "bundle": true,
+    "exportClassDefault": false,
+    "httpClient": "fetch",
+    "npmName": "",
+    "npmOrg": "",
+    "githubRepoName": "",
+    "ignoreFiles": [],
+    "generateEnumAs": "union",
+    "typescriptVersion": "5.3.3",
+    "zodVersion": "3.22.0",
+    "compilerOptions": {
+      "target": "es6",
+      "module": "Node16",
+      "lib": ["es2018", "dom"]
+    },
+    "usesFormData": false,
+    "environmentVariables": [],
+    "fileOutput": "/tmp",
+    "httpLibrary": {
+      "name": "fetch",
+      "packages": {},
+      "languages": ["typescript"],
+      "types": {
+        "packageName": "@types/isomorphic-fetch",
+        "version": "^0.0.36"
+      }
+    },
+    "customQueries": {
+      "paths": [],
+      "rawQueries": [],
+      "queriesData": []
+    },
+    "ai": false
+  },
+  "files": [
+    "package.json",
+    "tsconfig.json",
+    "examples/tsconfig.json",
+    "examples/package.json",
+    "examples/README.md",
+    "examples/src/index.ts",
+    "src/http/client.ts",
+    "src/services/auth-status/models/auth-status-ok-response.ts",
+    "src/services/sessions/models/create-session-request.ts",
+    "src/services/sessions/models/create-session-ok-response.ts",
+    "src/services/sessions/models/get-session-details-ok-response.ts",
+    "src/services/attachments/models/create-v1-attachments-request.ts",
+    ".gitignore",
+    "src/services/base-service.ts",
+    "src/services/auth-status/auth-status.ts",
+    "src/services/sessions/sessions.ts",
+    "src/services/attachments/attachments.ts",
+    "src/index.ts",
+    "src/services/auth-status/models/index.ts",
+    "src/services/sessions/models/index.ts",
+    "src/services/attachments/models/index.ts",
+    "src/services/auth-status/index.ts",
+    "src/services/sessions/index.ts",
+    "src/services/attachments/index.ts",
+    "src/http/index.ts",
+    "src/http/handlers/handler-chain.ts",
+    "src/http/types.ts",
+    "src/http/error.ts",
+    "src/http/handlers/terminating-handler.ts",
+    "src/http/handlers/hook-handler.ts",
+    "src/http/hooks/custom-hook.ts",
+    "src/http/hooks/hook.ts",
+    "src/http/handlers/retry-handler.ts",
+    "src/http/environment.ts",
+    "src/http/handlers/response-validation-handler.ts",
+    "src/http/handlers/auth-handler.ts",
+    "./LICENSE",
+    "documentation/models/AuthStatusOkResponse.md",
+    "documentation/models/CreateSessionRequest.md",
+    "documentation/models/CreateSessionOkResponse.md",
+    "documentation/models/GetSessionDetailsOkResponse.md",
+    "documentation/models/CreateV1AttachmentsRequest.md",
+    "src/http/handlers/request-validation-handler.ts",
+    ".devcontainer/devcontainer.json",
+    "src/http/transport/request.ts",
+    "src/http/transport/request-builder.ts",
+    "src/http/serialization/base-serializer.ts",
+    "src/http/serialization/query-serializer.ts",
+    "src/http/serialization/path-serializer.ts",
+    "src/http/serialization/header-serializer.ts",
+    "src/http/transport/request-fetch-adapter.ts",
+    "src/http/transport/transport-hook-adapter.ts",
+    "documentation/services/AuthStatusService.md",
+    "documentation/services/AttachmentsService.md",
+    "documentation/services/SessionsService.md",
+    "README.md"
+  ]
+}

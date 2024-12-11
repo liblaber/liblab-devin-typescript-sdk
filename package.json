@@ -1,0 +1,42 @@
+{
+  "name": "devin",
+  "version": "1.0.0",
+  "description": "This is an open API Spec for Devin, created internally by liblab. This is not an offical API Spec.",
+  "source": "./src/index.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "browser": "./dist/index.js",
+  "unpkg": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "tsc --noEmit",
+    "build": "tsup-node src/index.ts --format cjs,esm --dts --clean",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "typescript",
+    "sdk",
+    "api",
+    "client"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "author": "liblab",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "5.3.3",
+    "tsup": "^6.7.0"
+  },
+  "dependencies": {
+    "zod": "3.22.0"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  }
+}
